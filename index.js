@@ -3,8 +3,22 @@
 
 require("dotenv").config();
 const fetch = require('node-fetch');
+const axios = require('axios')
 
 const { Client, Intents } = require('discord.js');
+
+let capybaraFiles = new Map()
+capybaraFiles.set(0, {name: 'Capybara-agreiva.png', url: "https://i.imgur.com/YqHyFg7.png"})
+capybaraFiles.set(1, {name: 'Capybara-cantareta.png', url: "https://i.imgur.com/c8nFd0l.png"})
+capybaraFiles.set(2, {name: 'Capybara-la-strand.png', url: "https://i.imgur.com/AEQeeH8.png"})
+capybaraFiles.set(3, {name: 'Capybara-erbivora.png', url: "https://i.imgur.com/gllAQmP.png"})
+capybaraFiles.set(4, {name: 'Capybara-cu-palarie.png', url: "https://i.imgur.com/SnpQYE7.png"})
+capybaraFiles.set(5, {name: 'Capybara-fericita.png', url: "https://i.imgur.com/DfIYWjP.png"})
+capybaraFiles.set(6, {name: 'Capybara-furioasa.png', url: "https://i.imgur.com/121OJFY.png"})
+capybaraFiles.set(7, {name: 'Capybara-girafa.png', url: "https://i.imgur.com/kLqb4Q6.png"})
+capybaraFiles.set(8, {name: 'Capybara-inotatoare.png', url: "https://i.imgur.com/PwevNxu.png"})
+capybaraFiles.set(9, {name: 'Capybara-somnoroasa.png', url: "https://i.imgur.com/PtPGxt0.png"})
+
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
 //Listen to the event that signals the bot is ready to start working
@@ -23,8 +37,17 @@ client.on("messageCreate", async (message) => {
     createW2gChannel.then(link => { message.reply(link) })
   }
 
-  if (message.content.toLowerCase() === "lume") {
-    message.reply("test")
+  if (message.content.toLowerCase() === "capybara" || message.content.toLowerCase() === "cpbr") {
+    let luckyNumber = between(0, capybaraFiles.size - 1)
+    let myCapybara = capybaraFiles.get(luckyNumber)
+    const response = await axios.get(myCapybara.url,  { responseType: 'arraybuffer' })
+    const buffer = Buffer.from(response.data, "utf-8")
+    message.reply("Azi esti o " + myCapybara.name.split(".")[0])
+    message.reply({
+      files: [{
+        attachment: buffer,
+        name: myCapybara.name
+      }]});
   }
 
   if (message.content === "Cine e smecher?") {
@@ -54,3 +77,9 @@ const createW2gChannel = new Promise((resolve) => {
       resolve("https://w2g.tv/rooms/" + data.streamkey)
   });
 })
+
+function between(min, max) {  
+  return Math.floor(
+    Math.random() * (max - min) + min
+  )
+}
