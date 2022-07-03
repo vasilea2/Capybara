@@ -9,13 +9,13 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 
 //Listen to the event that signals the bot is ready to start working
 client.on("ready", () => {
-  console.log(`logged in as ${client.user.tag}`);
+  console.log(`${client.user.tag} is ready to rumble`);
 });
 
 //Listen to new messages on the server
 client.on("message", async (message) => {
-  console.log(message.content)
 
+  // Generate a w2g link when typed w2g
   if (message.content.toLowerCase() === "w2g") {
     createW2gChannel.then(link => { message.reply(link) })
   }
