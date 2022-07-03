@@ -16,7 +16,7 @@ client.on("ready", () => {
 });
 
 //Listen to new messages on the server
-client.on("message", async (message) => {
+client.on("messageCreate", async (message) => {
 
   // Generate a w2g link when typed w2g
   if (message.content.toLowerCase() === "w2g") {
