@@ -10,6 +10,9 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 //Listen to the event that signals the bot is ready to start working
 client.on("ready", () => {
   console.log(`${client.user.tag} is ready to rumble`);
+
+  if (process.env.DISCORD_TOKEN) console.log("We have discord token")
+  if (process.env.W2G_API_KEY) console.log("We have w2g key")
 });
 
 //Listen to new messages on the server
