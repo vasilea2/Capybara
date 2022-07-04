@@ -30,8 +30,6 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 
 //Listen to the event that signals the bot is ready to start working
 client.on("ready", () => {
-  console.log(`${client.user.tag} is ready to rumble`);
-
   if (process.env.DISCORD_TOKEN) console.log("We have discord token")
   if (process.env.W2G_API_KEY) console.log("We have w2g key")
 });
@@ -45,7 +43,7 @@ client.on("messageCreate", async (message) => {
   }
 
   if (message.content.toLowerCase() === "capybara" || message.content.toLowerCase() === "cpbr") {
-    let luckyNumber = between(0, capybaraFiles.size - 1)
+    let luckyNumber = between(0, capybaraFiles.size)
     let myCapybara = capybaraFiles.get(luckyNumber)
     message.reply("Azi esti o " + myCapybara.name.split(".")[0])
     message.reply({
