@@ -8,7 +8,7 @@ const axios = require('axios')
 const { Client, Intents } = require('discord.js');
 
 let capybaraFiles = new Map()
-capybaraFiles.set(0, {name: 'Capybara-agreiva.png', url: "https://i.imgur.com/YqHyFg7.png"})
+capybaraFiles.set(0, {name: 'Capybara-agresiva.png', url: "https://i.imgur.com/YqHyFg7.png"})
 capybaraFiles.set(1, {name: 'Capybara-cantareta.png', url: "https://i.imgur.com/c8nFd0l.png"})
 capybaraFiles.set(2, {name: 'Capybara-la-strand.png', url: "https://i.imgur.com/AEQeeH8.png"})
 capybaraFiles.set(3, {name: 'Capybara-erbivora.png', url: "https://i.imgur.com/gllAQmP.png"})
