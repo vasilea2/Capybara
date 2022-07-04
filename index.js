@@ -24,6 +24,7 @@ capybaraFiles.set(12, {name: 'Capybara-elena-luminita.png', url: "https://i.imgu
 capybaraFiles.set(13, {name: 'Capybara-salam.png', url: "https://i.imgur.com/ORnbN6U.png"})
 capybaraFiles.set(14, {name: 'Capybara-micuta.png', url: "https://i.imgur.com/QCKLADt.png"})
 capybaraFiles.set(15, {name: 'Capybara-hipster.png', url: "https://i.imgur.com/rXhhytp.png"})
+capybaraFiles.set(16, {name: 'Capybara-machidon.png', url: "https://i.imgur.com/ITq0oeO.png"})
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
