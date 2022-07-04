@@ -46,18 +46,17 @@ client.on("messageCreate", async (message) => {
   if (message.content.toLowerCase() === "capybara" || message.content.toLowerCase() === "cpbr") {
     let luckyNumber = between(0, capybaraFiles.size - 1)
     let myCapybara = capybaraFiles.get(luckyNumber)
-    const response = await axios.get(myCapybara.url,  { responseType: 'arraybuffer' })
-    const buffer = Buffer.from(response.data, "utf-8")
     message.reply("Azi esti o " + myCapybara.name.split(".")[0])
     message.reply({
       files: [{
-        attachment: buffer,
+        attachment: myCapybara.url,
         name: myCapybara.name
       }]});
   }
 
   if (message.content === "Cine e smecher?") {
-    message.reply("Pojo")
+    if (message.member.user.username === "Pojo") message.reply("Cine intreaba e smecher")
+    else message.reply(`In nici un caz ${message.member.user.username}`)
   }
 });
 
