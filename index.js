@@ -3,28 +3,9 @@
 
 require("dotenv").config();
 const fetch = require('node-fetch');
-const axios = require('axios')
+const capybaras = require('./CapybaraItems').CapybaraFiles
 
 const { Client, Intents } = require('discord.js');
-
-let capybaraFiles = new Map()
-capybaraFiles.set(0, {name: 'Capybara-agresiva.png', url: "https://i.imgur.com/YqHyFg7.png"})
-capybaraFiles.set(1, {name: 'Capybara-cantareta.png', url: "https://i.imgur.com/c8nFd0l.png"})
-capybaraFiles.set(2, {name: 'Capybara-la-strand.png', url: "https://i.imgur.com/AEQeeH8.png"})
-capybaraFiles.set(3, {name: 'Capybara-erbivora.png', url: "https://i.imgur.com/gllAQmP.png"})
-capybaraFiles.set(4, {name: 'Capybara-cu-palarie.png', url: "https://i.imgur.com/SnpQYE7.png"})
-capybaraFiles.set(5, {name: 'Capybara-fericita.png', url: "https://i.imgur.com/DfIYWjP.png"})
-capybaraFiles.set(6, {name: 'Capybara-furioasa.png', url: "https://i.imgur.com/121OJFY.png"})
-capybaraFiles.set(7, {name: 'Capybara-girafa.png', url: "https://i.imgur.com/kLqb4Q6.png"})
-capybaraFiles.set(8, {name: 'Capybara-inotatoare.png', url: "https://i.imgur.com/PwevNxu.png"})
-capybaraFiles.set(9, {name: 'Capybara-somnoroasa.png', url: "https://i.imgur.com/PtPGxt0.png"})
-capybaraFiles.set(10, {name: 'Capybara-de-cartier.png', url: "https://i.imgur.com/YNbnZPd.png"})
-capybaraFiles.set(11, {name: 'Capybara-st-patrick.png', url: "https://i.imgur.com/6VpBvKC.png"})
-capybaraFiles.set(12, {name: 'Capybara-elena-luminita.png', url: "https://i.imgur.com/ELVWZ61.png"})
-capybaraFiles.set(13, {name: 'Capybara-salam.png', url: "https://i.imgur.com/ORnbN6U.png"})
-capybaraFiles.set(14, {name: 'Capybara-micuta.png', url: "https://i.imgur.com/QCKLADt.png"})
-capybaraFiles.set(15, {name: 'Capybara-hipster.png', url: "https://i.imgur.com/rXhhytp.png"})
-capybaraFiles.set(16, {name: 'Capybara-machidon.png', url: "https://i.imgur.com/sJJH6B9.png"})
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
@@ -43,8 +24,8 @@ client.on("messageCreate", async (message) => {
   }
 
   if (message.content.toLowerCase() === "capybara" || message.content.toLowerCase() === "cpbr") {
-    let luckyNumber = between(0, capybaraFiles.size)
-    let myCapybara = capybaraFiles.get(luckyNumber)
+    let luckyNumber = between(0, capybaras.size)
+    let myCapybara = capybaras.get(luckyNumber)
     message.reply("Azi esti o " + myCapybara.name.split(".")[0])
     message.reply({
       files: [{
