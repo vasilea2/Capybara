@@ -25,5 +25,6 @@ CapybaraFiles.set(21, {name: 'Capybara-frezata.png', url: "https://i.imgur.com/G
 CapybaraFiles.set(22, {name: 'Capybara-la-SPA.png', url: "https://i.imgur.com/VU1OPkc.png"})
 CapybaraFiles.set(23, {name: 'Super-capybara.png', url: "https://i.imgur.com/kWTarfx.png"})
 CapybaraFiles.set(24, {name: 'Tank-ybara.png', url: "https://i.imgur.com/M3clAQz.png"})
+CapybaraFiles.set(25, {name: 'Capybara-covidata.png', url: "https://i.imgur.com/TkrSVvu.png"})
 
 module.exports.CapybaraFiles = CapybaraFiles

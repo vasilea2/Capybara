@@ -8,7 +8,7 @@ function HandleCapybara(message) {
         if (message.content.toLowerCase() === "capybara help" ||
             message.content.toLowerCase() === "cpbr help") {
             // Capybara help
-            let result = ""
+            let result = "Capybara here to help!\n\n"
             result+="- type 'capybara list' to get a list of all capybaras\n"
             result+="- type 'capybara -n <number from list>' to get that capybara\n"
             result+="- type 'capybara' to get a random capybara\n\n"
@@ -38,8 +38,11 @@ function HandleCapybara(message) {
                     attachment: myCapybara.url,
                     name: myCapybara.name
                 }]});
+                resolve([result1, result2])
+            } else if (!message.content.includes("Capybara here to help")) {
+                console.log("This is message: \n\n", message.content)
+                resolve(["Nu exista capybara ta :/\n", ""])
             }
-            resolve([result1, result2])
 
         } else if (message.content.toLowerCase() === "capybara" || 
             message.content.toLowerCase() === "cpbr") {
