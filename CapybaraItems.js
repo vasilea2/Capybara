@@ -26,5 +26,11 @@ CapybaraFiles.set(22, {name: 'Capybara-la-SPA.png', url: "https://i.imgur.com/VU
 CapybaraFiles.set(23, {name: 'Super-capybara.png', url: "https://i.imgur.com/kWTarfx.png"})
 CapybaraFiles.set(24, {name: 'Tank-ybara.png', url: "https://i.imgur.com/M3clAQz.png"})
 CapybaraFiles.set(25, {name: 'Capybara-covidata.png', url: "https://i.imgur.com/TkrSVvu.png"})
+CapybaraFiles.set(26, {name: 'Capybara-de-pe-targu-ocna.png', url: "https://i.imgur.com/SphZXN8.png"})
+CapybaraFiles.set(27, {name: 'Capybara-distrasa.png', url: "https://i.imgur.com/eTTCscV.png"})
+CapybaraFiles.set(28, {name: 'Capybara-fac-capybara.png', url: "https://i.imgur.com/gCFTgma.png"})
+CapybaraFiles.set(29, {name: 'Capybara-sare-de-pe-pod.png', url: "https://i.imgur.com/u2Xw8Wh.png"})
+CapybaraFiles.set(30, {name: 'M-am-capybara-pe-mine.png', url: "https://i.imgur.com/MW1ezK5.png"})
+CapybaraFiles.set(31, {name: 'Salt-capybara.png', url: "https://i.imgur.com/TkrSVvu.png"})
 
 module.exports.CapybaraFiles = CapybaraFiles
