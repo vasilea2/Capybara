@@ -33,5 +33,7 @@ CapybaraFiles.set(29, {name: 'Capybara-sare-de-pe-pod.png', url: "https://i.imgu
 CapybaraFiles.set(30, {name: 'M-am-capybara-pe-mine.png', url: "https://i.imgur.com/MW1ezK5.png"})
 CapybaraFiles.set(31, {name: 'Salt-capybara.png', url: "https://i.imgur.com/j60Qzcb.png"})
 CapybaraFiles.set(32, {name: 'Capybara-confuza.png', url: "https://i.imgur.com/kTCOwix.png"})
+CapybaraFiles.set(33, {name: 'Capybara-cu-de-toate.png', url: "https://i.imgur.com/MhkfNYA.png"})
+CapybaraFiles.set(34, {name: 'Capybara-jedi.png', url: "https://i.imgur.com/MptgzpP.png"})
 
 module.exports.CapybaraFiles = CapybaraFiles
