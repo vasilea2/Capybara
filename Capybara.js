@@ -21,7 +21,7 @@ function HandleCapybara(message) {
             let result = ""
             for (let i = 0; i < capybaras.size; i++) {
                 const capybara = capybaras.get(i)
-                result+=`${i}. ${capybara.name} - ${capybara.url}\n`
+                result+=`${i}. ${capybara.name.split(".")[0]}\n`
             }
             resolve([`Full list of capybaras: \n${result}`, ""])
 

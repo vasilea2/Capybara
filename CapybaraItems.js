@@ -1,6 +1,6 @@
 let CapybaraFiles = new Map()
 
-CapybaraFiles.set(0, {name: 'Capybara-agresiva.png', url: "https://i.imgur.com/dFFZxau.png"})
+CapybaraFiles.set(0, {name: 'Capybara-agreiva.png', url: "https://i.imgur.com/dFFZxau.png"})
 CapybaraFiles.set(1, {name: 'Capybara-cantareta.png', url: "https://i.imgur.com/382O6br.png"})
 CapybaraFiles.set(2, {name: 'Capybara-la-strand.png', url: "https://i.imgur.com/GB56xH9.png"})
 CapybaraFiles.set(3, {name: 'Capybara-erbivora.png', url: "https://i.imgur.com/sPSBrhm.png"})
@@ -35,5 +35,7 @@ CapybaraFiles.set(31, {name: 'Salt-capybara.png', url: "https://i.imgur.com/j60Q
 CapybaraFiles.set(32, {name: 'Capybara-confuza.png', url: "https://i.imgur.com/kTCOwix.png"})
 CapybaraFiles.set(33, {name: 'Capybara-cu-de-toate.png', url: "https://i.imgur.com/MhkfNYA.png"})
 CapybaraFiles.set(34, {name: 'Capybara-jedi.png', url: "https://i.imgur.com/MptgzpP.png"})
+CapybaraFiles.set(35, {name: 'Capybara-royala.png', url: "https://i.imgur.com/AqUgqHX.png"})
+CapybaraFiles.set(36, {name: 'Capybara-galactica.png', url: "https://i.imgur.com/z5vlNsf.png"})
 
 module.exports.CapybaraFiles = CapybaraFiles
