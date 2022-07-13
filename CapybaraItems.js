@@ -36,6 +36,7 @@ CapybaraFiles.set(32, {name: 'Capybara-confuza.png', url: "https://i.imgur.com/k
 CapybaraFiles.set(33, {name: 'Capybara-cu-de-toate.png', url: "https://i.imgur.com/MhkfNYA.png"})
 CapybaraFiles.set(34, {name: 'Capybara-jedi.png', url: "https://i.imgur.com/MptgzpP.png"})
 CapybaraFiles.set(35, {name: 'Capybara-royala.png', url: "https://i.imgur.com/AqUgqHX.png"})
-CapybaraFiles.set(36, {name: 'Capybara-galactica.png', url: "https://i.imgur.com/z5vlNsf.png"})
+CapybaraFiles.set(36, {name: 'Capybara-galactica.png', url: "https://i.imgur.com/tjpgifW.png"})
+CapybaraFiles.set(37, {name: 'Capybara-covid-negativa.png', url: "https://i.imgur.com/tjpgifW.png"})
 
 module.exports.CapybaraFiles = CapybaraFiles
