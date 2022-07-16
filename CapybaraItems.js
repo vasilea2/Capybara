@@ -150,7 +150,7 @@ CapybaraFiles.set(36, {
 });
 CapybaraFiles.set(37, {
   name: "Capybara-covid-negativa.png",
-  url: "https://i.imgur.com/tjpgifW.png",
+  url: "https://i.imgur.com/JDBs4Fc.png",
 });
 CapybaraFiles.set(38, {
   name: "Capybara-avocat.png",
