@@ -38,5 +38,6 @@ client.on("messageCreate", async (message) => {
   }
 });
 
+
 //Login to the server using bot token
 client.login(process.env.DISCORD_TOKEN);
